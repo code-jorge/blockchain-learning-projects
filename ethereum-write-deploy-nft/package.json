@@ -1,0 +1,21 @@
+{
+  "name": "my-sexy-nft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mint": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "ethers": "^5.5.3",
+    "hardhat": "^2.8.3"
+  },
+  "dependencies": {
+    "@alch/alchemy-web3": "^1.1.11",
+    "@openzeppelin/contracts": "^4.4.2",
+    "dotenv": "^14.3.2"
+  }
+}

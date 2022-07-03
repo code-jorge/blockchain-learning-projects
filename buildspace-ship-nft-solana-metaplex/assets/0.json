@@ -1,0 +1,19 @@
+{
+  "name": "Lord of Fire",
+  "symbol": "JAL",
+  "image": "0.png",
+  "properties": {
+    "files": [
+      {
+        "uri": "0.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": [
+      {
+        "address": "7Q6UXWoqGL2FD7zExXTzKtvr6FijYrrpnxxMXLza7dTH",
+        "share": 100
+      }
+    ]
+  }
+}

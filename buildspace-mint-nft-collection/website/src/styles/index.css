@@ -1,0 +1,153 @@
+body, 
+html {
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  font-family: -apple-system, 'Roboto', 'Oxygen', 'Ubuntu',  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  height: 100vh;
+  background-color: #0d1116;
+  overflow: scroll;
+  text-align: center;
+}
+
+.container {
+  height: 100%;
+  background-color: #0d1116;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  padding-top: 30px;
+}
+
+.title {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+  color: #60c657;
+}
+
+.intro {
+  margin-bottom: 45px;
+}
+
+.text {
+  font-size: 25px;
+  line-height: 34px;
+  color: white;
+  margin: 0 0 5px;
+}
+
+.button {
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.connect-button {
+  background: linear-gradient(to left, #60c657, #35aee2);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.connect-button:disabled {
+  opacity: .4;
+}
+
+.mint-button {
+  background: linear-gradient(to left, #a200d6, #ff6fdf);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin-right: 15px;
+}
+
+.mint-button:disabled {
+  opacity: .4;
+}
+
+.transaction-result {
+  width: 500px;
+  padding: 20px;
+  border-radius: 4px;
+  color: white;
+  text-align: left;
+  position: relative;
+  margin: 20px auto;
+}
+
+.transaction-result-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.transaction-result a {
+  color: white;
+}
+
+.transaction-result[data-status="success"] {
+  background-color: #0f5132;
+  
+}
+
+.transaction-result[data-status="error"] {
+  background-color: #842029;
+}
+
+.transaction-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

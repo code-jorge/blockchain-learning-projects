@@ -1,0 +1,37 @@
+import "../styles/globals.css";
+
+import type { AppProps } from "next/app";
+import { ThirdwebProvider } from "@3rdweb/react";
+import { Toaster } from "react-hot-toast";
+import Layout from "../components/layout";
+import Head from "next/head";
+
+const MyApp = ({ Component, pageProps }: AppProps)=> {
+
+  // Polygon Mumbai chain ID is 80001, see https://chainlist.org
+  const supportedChainIds = [80001];
+
+  // We'll only support MetaMask which is an injected connector
+  const connectors = {
+    injected: {},
+  };
+
+  return (
+    <>
+      <Toaster position="top-right" />
+      <Head>
+        <title>{pageProps.title}</title>
+      </Head>
+      <ThirdwebProvider
+        connectors={connectors}
+        supportedChainIds={supportedChainIds}
+      >
+        <Layout title={pageProps.title}>
+          <Component {...pageProps} />
+        </Layout>
+      </ThirdwebProvider>
+    </>
+  );
+}
+
+export default MyApp

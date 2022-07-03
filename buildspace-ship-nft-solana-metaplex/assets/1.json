@@ -1,0 +1,19 @@
+{
+  "name": "Lord of Slow",
+  "symbol": "JAL",
+  "image": "1.png",
+  "properties": {
+    "files": [
+      {
+        "uri": "1.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": [
+      {
+        "address": "7Q6UXWoqGL2FD7zExXTzKtvr6FijYrrpnxxMXLza7dTH",
+        "share": 100
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Profile",
+    "price": "0.09",
+    "description": "Profile Photo",
+    "image_url": "https://i.imgur.com/czRv2Ee.png",
+    "filename": "profile.jpg",
+    "hash": "Qmb4tUQzmhDaKbSbaNr98WX5PFqE9pavEhuty327fATdeD"
+  },
+  {
+    "id": 2,
+    "name": "Sad Pepe",
+    "price": "0.1",
+    "image_url": "https://i.imgur.com/lXSWGjR.png",
+    "description": "Sad Pepe!",
+    "filename": "5845cd230b2a3b54fdbaecf7.png",
+    "hash": "QmaFAGZntQh5Vd7v7pcT6yj6W3NVYLnE8zK2Tg3ZqtWq7H"
+  }
+]
